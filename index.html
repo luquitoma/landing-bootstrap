@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banda</title>
+    <title>Loja de Jogos</title>
     <style>
-      .container text-center {
+      .divlegal {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        flex-direction: column;
+      }
+      .container.text-center {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -14,8 +21,9 @@
         width: 100%;
       }
       .imagem {
-        max-width: 100em;
-        max-height: 100em;
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
       }
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -60,10 +68,19 @@
     </div>
   </div>
 </nav>
-<h1 class="display-4 text-center">Catálogo de Jogos</h1>
+<div>
+  <div class="divlegal">
+    <h1 class="display-4 text-center">Catálogo de Jogos</h1>
+  </div>
 <div class="container text-center">
+  <div>
   <img src ="https://upload.wikimedia.org/wikipedia/pt/0/03/Super_Mario_Bros._box.png?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" class="img-fluid imagem" alt="Imagem de jogos"/>
+  </div>
+  
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsW6o0C8SXGs_tltadYFJ-QedCkHPkuATY7NkDPdVNfA&s=10" class="img-fluid imagem" alt="Imagem de jogos"/>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMyveK-nPJvLgf8-Qm6tWAQN4ezhjddEZPz-gT_wk3yA&s=10" class="img-fluid imagem" alt="Imagem de jogos"/>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6g1k5r7J8X3Z2j4x5g6k5r7J8X3Z2j4x" class="img-fluid imagem" alt="Imagem de jogos"/> 
 </div>
+  </div>
 </body>
 </html>
