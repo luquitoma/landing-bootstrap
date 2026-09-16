@@ -7,34 +7,51 @@
     <style>
       .divlegal {
         background-color: #f8f9fa;
-        padding: 20px;
-        border-radius: 5px;
-        margin-bottom: 20px;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        margin-bottom: 2rem;
+        display: flex;
         flex-direction: column;
       }
       .container.text-center {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 20px;
-        height: 300px;
+        gap: 2rem;
         width: 100%;
       }
       .imagem {
-        width: 250px;
-        height: 250px;
+        width: 10em;
+        height: 10em;
         object-fit: cover;
+        align-self: center;
       }
+      .hero {
+        background-color: #c5ccd3;
+        padding: 5rem;
+        text-align: center;
+      }
+      .divlegal h1 {
+        padding: 3rem;
+        align-items: space-between;
+      }
+      .card {
+        margin: 2rem;
+        /* Cor alterada */
+        background-color: #f8f9fa;
+      }
+
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
 </head>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <body>
-
+    <!-- Navbar com tema alterado-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Loja de Jogos</a>
+    <!-- 39 propriedades -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -57,9 +74,6 @@
             <li><a class="dropdown-item" href="https://www.orkut.com/">Orkut</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Pesquisar jogos..." aria-label="Search"/>
@@ -68,19 +82,40 @@
     </div>
   </div>
 </nav>
-<div>
+  <div class="hero">
+    <h1>Jogos digitais, experiências reais</h1>
+    <p>Descubra os melhores jogos digitais e vivencie experiências inesquecíveis.</p>
+  </div>
   <div class="divlegal">
-    <h1 class="display-4 text-center">Catálogo de Jogos</h1>
+  <div>
+    <h1 class="text-center">Jogos em destaque</h1>
   </div>
 <div class="container text-center">
-  <div>
+  <div class="card" style="width: 18rem;">
   <img src ="https://upload.wikimedia.org/wikipedia/pt/0/03/Super_Mario_Bros._box.png?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" class="img-fluid imagem" alt="Imagem de jogos"/>
+  <div class="card-body">
+    <h5 class="card-title">Super Mario Bros.</h5>
+    <p class="card-text">Um dos jogos mais icônicos de todos os tempos.</p>
+    <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
   </div>
-  
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsW6o0C8SXGs_tltadYFJ-QedCkHPkuATY7NkDPdVNfA&s=10" class="img-fluid imagem" alt="Imagem de jogos"/>
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMyveK-nPJvLgf8-Qm6tWAQN4ezhjddEZPz-gT_wk3yA&s=10" class="img-fluid imagem" alt="Imagem de jogos"/>
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6g1k5r7J8X3Z2j4x5g6k5r7J8X3Z2j4x" class="img-fluid imagem" alt="Imagem de jogos"/> 
+  </div>
+<div class="card" style="width: 18rem;">
+  <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsW6o0C8SXGs_tltadYFJ-QedCkHPkuATY7NkDPdVNfA&s=10" class="img-fluid imagem" alt="Imagem de jogos"/>
+  <div class="card-body">
+    <h5 class="card-title">Sonic the Hedgehog 3</h5>
+    <p class="card-text">Um jogo de ação e aventura clássico com níveis desafiadores.</p>
+    <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+  </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+  <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMyveK-nPJvLgf8-Qm6tWAQN4ezhjddEZPz-gT_wk3yA&s=10" class="img-fluid imagem" alt="Imagem de jogos"/>
+  <div class="card-body">
+    <h5 class="card-title">Paper Mario: The Thousand-Year Door</h5>
+    <p class="card-text">Um jogo de RPG com mecânicas de batalha dinâmicas.</p>
+    <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+    </div>
 </div>
   </div>
+</div>
 </body>
 </html>
